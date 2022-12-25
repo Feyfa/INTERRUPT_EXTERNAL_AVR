@@ -23,10 +23,9 @@ int main(void)
 	interruptExternalInit(pinINT0,activeWhen0To1);//using the INT0 pin, the interrupt fires when 0 goes to 1
 	interruptExternalInit(pinINT1,activeWhen1To0);//using the INT1 pin, the interrupt fires when 1 goes to 0
 	sei();
-    
 	while (1) 
-    {
+	{
 		PORTB &= ~((1<<0)|(1<<1));
-    }
+	}
 }
 
